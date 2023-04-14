@@ -24,7 +24,7 @@ class DataViz:
                 color='green',
                 edgecolor="black",
                 alpha=0.7)
-        ax.set_title("Histogram example",
+        ax.set_title("Histogram with bin = {}".format(bin_val),
                      fontdict={
                          'fontsize': 15,
                          'fontweight': 'bold'

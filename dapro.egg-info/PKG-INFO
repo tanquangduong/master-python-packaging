@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: dapro
+Version: 0.0.1
+Summary: A package demo
+Author-email: Tan Quang Duong <tquangbk@gmail.com>
+Project-URL: Homepage, https://github.com/tanquangduong
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9

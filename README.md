@@ -12,5 +12,12 @@ conda activate env_name
 ````commandline
 pip install -r .\path_to_requirements\requirements.txt
 ````
+## ✅ Setup Package
+- Install package 'dapro' locally
+````commandline
+cd ./path_to_this_cloned_repository
+pip install -e .
+````
+- Install package 'dapro' from Github repository HTTPs
 
   

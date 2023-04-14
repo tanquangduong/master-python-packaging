@@ -3,16 +3,23 @@ from dapro.data_eda import pro_eda
 from dapro.data_viz import pro_dataviz
 from .input import get_data_file_path
 import json
+import os
 
 
 class DataProcessing:
     """
     Create 'DataProcessing' class for 'dapro' package. In this example, we will create 3 methods:
-    'read_file', 'show_number_rows_cols' and 'show_hist_plot'
+    'read_file', 'show_number_rows_cols' and 'show_hist_plot'.
+    This class allows to load hyperparameter as default in the package if config_path=None. In contrast,
+    if config_path!=None, it can dynamically load new hyperparameter in Dev environment
     """
-    def __init__(self):
-        with open(get_data_file_path("config/hyperparameter.json"), "rb") as f:
-            self.parameters = json.load(f)
+    def __init__(self, config_path=None):
+        if config_path:
+            with open(os.path.join(os.getcwd(), config_path)) as f:
+                self.parameters = json.load(f)
+        else:
+            with open(get_data_file_path("config/hyperparameter.json"), "rb") as f:
+                self.parameters = json.load(f)
 
     @staticmethod
     def read_file(path):
@@ -38,7 +45,7 @@ class DataProcessing:
         """
         Call sub-package 'data_viz' to plot histogram for a given array / series
         :param series: One of the columns under 'series' dtype
-        :param bin_num: Number of bin in histogram
+        :param bin_num: Number of bin in histogram. Default as '100'
         :return: Plot histogram
         """
         if not bin_num:
