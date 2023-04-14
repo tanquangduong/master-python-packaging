@@ -3,12 +3,23 @@ import seaborn as sns
 
 
 class DataViz:
+    """
+    Create 'DataViz' class for the sub-package 'pro_eda'. In this example, we implement one method for data
+    exploration 'plot_histogram'
+    """
     def __init__(self, series):
         self.series = series
 
-    def _histogram(self, bin_val):
+    @staticmethod
+    def _histogram(series, bin_val):
+        """
+        Unit function to plot histogram
+        :param series: feature as 'series' dtype from dataframe
+        :param bin_val: Number of bin in histogram
+        :return: figure of histogram
+        """
         fig, ax = plt.subplots(figsize=(10, 4))
-        ax.hist(self.series,
+        ax.hist(series,
                 bins=bin_val,
                 color='green',
                 edgecolor="black",
@@ -29,7 +40,8 @@ class DataViz:
 
     def plot_histogram(self, bin_val):
         """
-        Get a series
-        :return: histogram plot
+        Get a series from the parent class and plot histogram
+        :param bin_val: Number of bin in histogram
+        :return: Figure of histogram
         """
-        return self._histogram(bin_val)
+        return self._histogram(self.series, bin_val)

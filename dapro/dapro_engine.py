@@ -6,21 +6,41 @@ import json
 
 
 class DataProcessing:
+    """
+    Create 'DataProcessing' class for 'dapro' package. In this example, we will create 3 methods:
+    'read_file', 'show_number_rows_cols' and 'show_hist_plot'
+    """
     def __init__(self):
         with open(get_data_file_path("config/hyperparameter.json"), "rb") as f:
-            parameters = json.load(f)
-        self.bin_val = parameters['bin']
+            self.parameters = json.load(f)
 
     @staticmethod
     def read_file(path):
+        """
+        Call sub-package 'pro_import' to import dataframe from path
+        :param path:
+        :return: dataframe
+        """
         df = pro_import.DataImporting(path).data_import()
         return df
 
     @staticmethod
     def show_number_rows_cols(dataframe):
-        rows, cols = pro_eda.DataEDA(dataframe).data_eda()
+        """
+        Call sub-package 'pro_eda' to calculate basic Exploratory Data Analysis
+        :param dataframe:
+        :return: row number, column number
+        """
+        rows, cols = pro_eda.DataEDA(dataframe).data_shape()
         return rows, cols
 
-    @staticmethod
-    def show_hist_plot(self, series):
-        return pro_dataviz.DataViz(series).plot_histogram(self.bin_val)
+    def show_hist_plot(self, series, bin_num=None):
+        """
+        Call sub-package 'data_viz' to plot histogram for a given array / series
+        :param series: One of the columns under 'series' dtype
+        :param bin_num: Number of bin in histogram
+        :return: Plot histogram
+        """
+        if not bin_num:
+            bin_num = self.parameters['bin']
+        return pro_dataviz.DataViz(series).plot_histogram(bin_num)
