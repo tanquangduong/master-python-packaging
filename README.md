@@ -26,8 +26,13 @@ Below is the package 'dapro' structure with directory tree
     │   │   ├───config
     │   │   │  └───hyperparameter.json
     │   │   └───__init__.py
+    │   ├───__init__.py
     │   ├───dapro_engine.py
-    │   └───__init__.py
+    │   ├───requirements.txt
+    │   ├───pyproject.toml
+    │   ├───MANIFEST.in
+    │   └───README.md
+> Other files/folders are used for testing the package's installation and functionality
 ## ✅ Install Package
 - Install package 'dapro' locally
 ````commandline
