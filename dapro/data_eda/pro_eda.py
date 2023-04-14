@@ -11,7 +11,7 @@ class DataEDA:
 
     def data_shape(self):
         """
-        Get dataframe
+        Get dataframe and return shape
         :return: number of rows and columns
         """
         rows, cols = self.dataframe.shape

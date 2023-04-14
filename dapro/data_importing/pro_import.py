@@ -11,7 +11,7 @@ class DataImporting:
 
     def data_import(self):
         """
-        Get data path of csv file, read csv file using pandas package
+        Get dataset path of csv file, read csv file using pandas package
         :return: dataframe
         """
         return pd.read_csv(self.path)

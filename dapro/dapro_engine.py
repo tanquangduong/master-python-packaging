@@ -18,7 +18,7 @@ class DataProcessing:
     def read_file(path):
         """
         Call sub-package 'pro_import' to import dataframe from path
-        :param path:
+        :param path: dataset path
         :return: dataframe
         """
         df = pro_import.DataImporting(path).data_import()

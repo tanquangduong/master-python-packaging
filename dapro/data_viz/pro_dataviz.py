@@ -13,7 +13,7 @@ class DataViz:
     @staticmethod
     def _histogram(series, bin_val):
         """
-        Unit function to plot histogram
+        Unit function to plot histogram for numerical feature
         :param series: feature as 'series' dtype from dataframe
         :param bin_val: Number of bin in histogram
         :return: figure of histogram
