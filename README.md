@@ -9,7 +9,7 @@
 - Create Python environment\
 `pip install -r .\path_to_requirements\requirements.txt`
 
-## Package development
+## ✅  Package development
 Below is the package 'dapro' structure with directory tree
 
     ├───dapro
