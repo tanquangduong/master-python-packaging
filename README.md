@@ -8,6 +8,26 @@
 `conda activate env_name`
 - Create Python environment\
 `pip install -r .\path_to_requirements\requirements.txt`
+
+## Package development
+Below is the package 'dapro' structure with directory tree
+
+    ├───dapro
+    │   ├───data_eda
+    │   │   ├───pro_eda.py
+    │   │   └───__init__.py
+    │   ├───data_importing
+    │   │   ├───pro_import.py
+    │   │   └───__init__.py
+    │   ├───data_viz
+    │   │   ├───config
+    │   │   └───__init__.py
+    │   ├───input
+    │   │   ├───config
+    │   │   │  └───hyperparameter.json
+    │   │   └───__init__.py
+    │   ├───dapro_engine.py
+    │   └───__init__.py
 ## ✅ Install Package
 - Install package 'dapro' locally
 ````commandline
