@@ -15,7 +15,7 @@ git clone https://github.com/tanquangduong/master-python-packaging.git
 cd ./path_to_this_cloned_repository
 pip install -e .
 ````
-- Install package 'dapro' from GitHub repository HTTPs
+- Install package 'dapro' from GitHub repository HTTPS\
 `git install git+https://github.com/tanquangduong/master-python-packaging.git`
 
   
