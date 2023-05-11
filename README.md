@@ -3,11 +3,15 @@
 🚀 Develop, Install and Publish a demo python package - "dapro", stands for "data processing" 🚀
 
 In this repository, I will walk you through the steps to build a Python package for your development in software engineering and/or data science. Let's test/install/use it firstly, then learn how to build it from scratch. Therefore, I organize this README as follows:
-- Install package locally and test/use the package
-- Install package via github link and test/use the package
+- Install package LOCALLY and test/use the package
+- Install package via GITHUB REPOSITORY and test/use the package
+- Package development
+    - Overview of package structure
+    - What a package needs
+    - Test your python development before installation
+- Next steps
 
-
-## ✅ Install package locally and test/use the package 
+## ✅ Install package LOCALLY and test/use the package 
 - Clone this repo and go inside. If you have not done this step, do the following commands. Otherway, skip this step.
 ```
 git clone https://github.com/tanquangduong/master-python-packaging.git
@@ -34,7 +38,7 @@ jupyter notebook
 ## Finally, run all the notebook cells. If it works, it means that your installation locally works and the your package development works just fine.
 ```
 
-## ✅ Install package from Github repository and test/use the package 
+## ✅ Install package from GITHUB REPOSITORY and test/use the package 
 - Clone this repo and go inside. If you have not done this step, do the following commands. Otherway, skip this step.
 ```
 git clone https://github.com/tanquangduong/master-python-packaging.git
@@ -86,7 +90,7 @@ jupyter notebook
     │   ├───MANIFEST.in
     │   └───README.md
 
-### What a package needs:
+### What a package needs
 - Package folder with its name. In this demo, it is the folder 'dapro' for the package 'dapro'
 - File: '__init__.py' to let python know that this is a python package
 - File: 'package_main.py' contains all functions of this package. In this demo, it is 'dapro_engine.py'
@@ -116,5 +120,5 @@ jupyter notebook
     - Open the notebook file 'test-package-development.ipynb'
     - Run all the notebook cell. If it works, it means that your developments work as expected.
 
-# Next steps:
+# Next steps
 - Public our package to 'pypi.org' so it can be install by standard method: "pip install dapro"
