@@ -92,7 +92,7 @@ jupyter notebook
 
 ### What a package needs
 - Package folder with its name. In this demo, it is the folder 'dapro' for the package 'dapro'
-- File: "\___init___.py" to let python know that this is a python package
+- File: "\_\_init\_\_.py" to let python know that this is a python package
 - File: 'package_main.py' contains all functions of this package. In this demo, it is 'dapro_engine.py'
 - File: 'requirements.txt' contains all the required packages that are used inside our package 'dapro'
 - File: 'pyproject.toml' contains information for package version, author, ... necessary for installation step
