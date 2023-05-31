@@ -12,7 +12,7 @@ In this repository, I will walk you through the steps to build a Python package 
 - Next steps
 
 ## ✅ Install package LOCALLY and test/use the package 
-- Clone this repo and go inside. If you have not done this step, do the following commands. Otherwise, skip this step.
+- Clone this repo and go inside. If you have not yet done this step, do the following commands. Otherwise, skip this step.
 ```
 git clone https://github.com/tanquangduong/master-python-packaging.git
 cd ./path_to_this_cloned_repository
@@ -39,7 +39,7 @@ jupyter notebook
 ```
 
 ## ✅ Install package from GITHUB REPOSITORY and test/use the package 
-- Clone this repo and go inside. If you have not done this step, do the following commands. Otherwise, skip this step.
+- Clone this repo and go inside. If you have not yet done this step, do the following commands. Otherwise, skip this step.
 ```
 git clone https://github.com/tanquangduong/master-python-packaging.git
 cd ./path_to_this_cloned_repository
