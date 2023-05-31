@@ -12,7 +12,7 @@ In this repository, I will walk you through the steps to build a Python package 
 - Next steps
 
 ## ✅ Install package LOCALLY and test/use the package 
-- Clone this repo and go inside. If you have not done this step, do the following commands. Otherway, skip this step.
+- Clone this repo and go inside. If you have not done this step, do the following commands. Otherwise, skip this step.
 ```
 git clone https://github.com/tanquangduong/master-python-packaging.git
 cd ./path_to_this_cloned_repository
@@ -39,19 +39,19 @@ jupyter notebook
 ```
 
 ## ✅ Install package from GITHUB REPOSITORY and test/use the package 
-- Clone this repo and go inside. If you have not done this step, do the following commands. Otherway, skip this step.
+- Clone this repo and go inside. If you have not done this step, do the following commands. Otherwise, skip this step.
 ```
 git clone https://github.com/tanquangduong/master-python-packaging.git
 cd ./path_to_this_cloned_repository
 ```
 - Create NEW Python environment: for example,  'env_package_github'
 ```
-conda create -n env_package_local python=3.10
+conda create -n env_package_github python=3.10
 conda activate env_package_github
 ```
-- Install package 'dapro' locally
+- Install package 'dapro' from github link
 ```
-git install git+https://github.com/tanquangduong/master-python-packaging.git
+pip install git+https://github.com/tanquangduong/master-python-packaging.git
 ```
 
 - Test installed package 'dapro' inside the environment 'env_package_github'
