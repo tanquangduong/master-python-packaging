@@ -12,7 +12,7 @@ In this repository, I will walk you through the steps to build a Python package 
 - Next steps
 
 ## ✅ Install package LOCALLY and test/use the package 
-- Clone this repo and go inside. If you have not done this step, do the following commands. Otherway, skip this step.
+- Clone this repo and go inside. If you have not yet done this step, do the following commands. Otherwise, skip this step.
 ```
 git clone https://github.com/tanquangduong/master-python-packaging.git
 cd ./path_to_this_cloned_repository
@@ -39,19 +39,19 @@ jupyter notebook
 ```
 
 ## ✅ Install package from GITHUB REPOSITORY and test/use the package 
-- Clone this repo and go inside. If you have not done this step, do the following commands. Otherway, skip this step.
+- Clone this repo and go inside. If you have not yet done this step, do the following commands. Otherwise, skip this step.
 ```
 git clone https://github.com/tanquangduong/master-python-packaging.git
 cd ./path_to_this_cloned_repository
 ```
 - Create NEW Python environment: for example,  'env_package_github'
 ```
-conda create -n env_package_local python=3.10
+conda create -n env_package_github python=3.10
 conda activate env_package_github
 ```
-- Install package 'dapro' locally
+- Install package 'dapro' from github link
 ```
-git install git+https://github.com/tanquangduong/master-python-packaging.git
+pip install git+https://github.com/tanquangduong/master-python-packaging.git
 ```
 
 - Test installed package 'dapro' inside the environment 'env_package_github'
@@ -101,16 +101,16 @@ jupyter notebook
 - Sub-folder: 'input'. This is optional, but it allows you to add/manage hyperparameters and/or sample datasets for package usage. Inside it, we have:  
     - sub-folder 'config'
         - file: 'hyperparameter.json'
-    - file '\_\_init\_\_.py.py' to let python know that it is sub-package
+    - file '\_\_init\_\_.py' to let python know that it is sub-package
 - Sub-package: 'data_eda'. It includes:
     - file: 'pro_eda.py' contains functions for data exploratory data analysis
-    - file '\_\_init\_\_.py.py' to let python know that it is sub-package
+    - file '\_\_init\_\_.py' to let python know that it is sub-package
 - Sub-package: 'data_importing'. It includes:
     - file: 'pro_import.py' contains functions for data importing
-    - file '\_\_init\_\_.py.py' to let python know that it is sub-package
+    - file '\_\_init\_\_.py' to let python know that it is sub-package
 - Sub-package: 'data_viz'. It includes:
     - file: 'pro_dataviz.py' contains functions for data visualization
-    - file '\_\_init\_\_.py.py' to let python know that it is sub-package
+    - file '\_\_init\_\_.py' to let python know that it is sub-package
 
 ### Test your python development before installation
 - We prepare a sub-folder 'datasets', containing 'iris.csv', for testing our developement. 
