@@ -116,7 +116,7 @@ jupyter notebook
 - We prepare a sub-folder 'datasets', containing 'iris.csv', for testing our developement. 
 - We prepare the file 'test-package-development.ipynb'. 
     - Come back to the root folder of this package: cd ..
-    - In terminal, open notebote: jupyter notebook
+    - In terminal, open notebook: jupyter notebook
     - Open the notebook file 'test-package-development.ipynb'
     - Run all the notebook cell. If it works, it means that your developments work as expected.
 

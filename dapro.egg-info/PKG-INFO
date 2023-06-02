@@ -1,7 +1,7 @@
 Metadata-Version: 2.1
 Name: dapro
 Version: 0.0.1
-Summary: A package demo
+Summary: A demo package for data processing. Allow to read hyperparameter as input. MultiSubpackage of processing
 Author-email: Tan Quang Duong <tquangbk@gmail.com>
 Project-URL: Homepage, https://github.com/tanquangduong
 Classifier: Programming Language :: Python :: 3
